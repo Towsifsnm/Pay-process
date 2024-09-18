@@ -43,4 +43,4 @@ else {
     alert('Wrong number or pin');
 }
 
-})
+});
