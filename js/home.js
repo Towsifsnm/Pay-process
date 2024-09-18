@@ -14,4 +14,31 @@ const pinNumberInput = document.getElementById('input-pin-number').value;
 
 console.log(addMoneyInput,pinNumberInput);
 
+
+
+// verify the pin number
+if (pinNumberInput=== '1234'){
+    console.log('added money');
+
+    // step-4: get the current balance
+    const balance = document.getElementById('account-balance').innerText; 
+
+
+    // step 05: addd money to the main account
+    const addBalance = parseFloat(addMoneyInput);
+    const addMoney = parseFloat(balance);
+
+    const newAccount = addBalance+ addMoney;
+    console.log(newAccount);
+
+
+
+    // step 06: update the balance
+
+document.getElementById('account-balance').innerText = newAccount;    
+}
+else{
+   alert('error')
+}
+
 });
